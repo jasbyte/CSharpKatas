@@ -23,9 +23,9 @@ namespace FizzBuzz
             return amount;
         }
 
-        private static string DetermineStringValue(int value)
+        public static string DetermineStringValue(int value)
         {
-            StringBuilder stringValue = new StringBuilder();
+            StringBuilder stringValue = new();
 
             if (value % 3 == 0)
                 stringValue.Append("Fizz");
